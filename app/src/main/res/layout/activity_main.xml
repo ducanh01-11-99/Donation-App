@@ -30,17 +30,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/donateTitle" />
 
+
     <Button
         android:id="@+id/donateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="onClickButtonDonate"
         android:text="@string/donateButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.511"
+        tools:ignore="OnClick" />
 
     <RadioGroup
         android:id="@+id/paymentMethod"
@@ -56,7 +60,7 @@
         tools:ignore="MissingConstraints">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/Paypal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
@@ -65,7 +69,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/Direct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -101,11 +105,11 @@
         android:id="@+id/textView3"
         android:layout_width="74dp"
         android:layout_height="51dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="128dp"
         android:text="Amount"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progessBar" />
 
