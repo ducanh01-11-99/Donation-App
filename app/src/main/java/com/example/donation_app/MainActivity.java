@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         if (donateButton != null) {
             Log.v("donateButton", "is not null");
         }
-
         amountPicker.setMinValue(0);
         amountPicker.setMaxValue(1000);
     }
